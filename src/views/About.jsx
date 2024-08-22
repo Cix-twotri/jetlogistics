@@ -24,6 +24,7 @@ import ShipImage from "../assets/Images/ship2.jpg";
 import ManImg from "../assets/Images/man.jpg";
 import Signature from "../assets/Images/signature.png";
 import SmartLogistics from "../assets/Images/smartLogistics.png";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -66,7 +67,9 @@ const About = () => {
       <section>
         <SmartLogisticsImgContainer>
           <SmartLogisticsImg src={SmartLogistics} alt="ShipImage" />
-          <TrackYourParcel>Track Your Parcel</TrackYourParcel>
+          <TrackYourParcel>
+            <Link to="/trackParcel">Track Your Parcel</Link>
+          </TrackYourParcel>
         </SmartLogisticsImgContainer>
       </section>
     </>

@@ -8,7 +8,7 @@ import Services from "./views/Services";
 import ContactUs from "./views/ContactUs";
 import Register from "./views/Register";
 import Login from "./views/Login";
-import Dashboard from "./views/Dashboard";
+import TrackkPacel from "./views/TrackYourPacel";
 
 const App = () => {
   return (
@@ -21,7 +21,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<ContactUs />} />
-          <Route path="/dashboard" element={<PrivateRoute element={Dashboard} />} /> {/* Add Dashboard route */}
+          <Route path="/trackParcel" element={<TrackkPacel />} />
         </Routes>
       </Router>
     </AuthProvider>

@@ -33,6 +33,7 @@ import {
 } from "../Styles/Home/Home.styles";
 import About from "./About";
 import Services from "./Services";
+import { Link } from "react-router-dom";
 
 // Custom component for slide content
 const SlideContent = ({
@@ -93,10 +94,14 @@ const SlideContent = ({
           <DescriptionText>{description}</DescriptionText>
           <ButtonContainer>
             <Button>
-              <ButtonText>Track Your Order</ButtonText>
+              <ButtonText>
+                <Link to="/trackParcel">Track Your Parcel</Link>
+              </ButtonText>
             </Button>
             <Button2>
-              <ButtonText>Learn More</ButtonText>
+              <ButtonText>
+                <Link to="/about">Learn More</Link>
+              </ButtonText>
             </Button2>
           </ButtonContainer>
         </BottomSlider>
