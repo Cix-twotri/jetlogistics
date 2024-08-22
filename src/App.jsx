@@ -1,4 +1,3 @@
-// App.js
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import PrivateRoute from "./PrivateRoute";
@@ -9,8 +8,7 @@ import Services from "./views/Services";
 import ContactUs from "./views/ContactUs";
 import Register from "./views/Register";
 import Login from "./views/Login";
-
-
+import Dashboard from "./views/Dashboard";
 
 const App = () => {
   return (
@@ -23,6 +21,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/dashboard" element={<PrivateRoute element={Dashboard} />} /> {/* Add Dashboard route */}
         </Routes>
       </Router>
     </AuthProvider>

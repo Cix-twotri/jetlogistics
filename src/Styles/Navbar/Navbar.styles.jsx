@@ -2,6 +2,12 @@ import styled from "styled-components";
 import { Colors } from "../../components/Colors/Colors";
 
 export const Main = styled.div`
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Adjust the z-index as needed */
+  background-color: #fff; /* Ensure the navbar has a background color */
+  width: 100%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
   display: flex;
   flex-direction: column;
 
@@ -365,7 +371,6 @@ export const DrawerContainer = styled.div`
   margin-right: 10px;
   margin-top: 10px;
   background-color: ${Colors.lightyello};
-
 
   /* Large screens */
   @media (min-width: 901px) and (max-width: 2500px) {
