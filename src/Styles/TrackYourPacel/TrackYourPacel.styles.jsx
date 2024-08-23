@@ -5,7 +5,7 @@ export const MainTrackParcel = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: auto;
 
   /* Large screens */
   @media (min-width: 901px) and (max-width: 2500px) {
