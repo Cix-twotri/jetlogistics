@@ -99,7 +99,7 @@ const TrackResult = ({ trackingNumber, status, createdAt, deliveryAddress }) => 
 
               <WallbillNumber>
                 <Wallbill> Waybill Number </Wallbill>
-                <Numbers>{deliveryAddress}</Numbers>
+                <Numbers>{trackingNumber}</Numbers>
               </WallbillNumber>
             </MoreDeliveryDetailsContainer>
           </AccordionContent>
