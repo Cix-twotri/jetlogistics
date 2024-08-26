@@ -250,3 +250,9 @@ export const Button = styled.button`
   @media (max-width: 600px) {
   }
 `;
+
+export const Result = styled.p`
+  margin-top: 20px;
+  font-weight: bold;
+  color: ${(props) => (props.error ? 'red' : 'green')};
+`;
